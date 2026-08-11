@@ -1,4 +1,4 @@
-# Hi 👋, I'm Tillu Badmosh
+# Hi 👋, I'm Jatin Kaushik
 
 ### A passionate Python developer
 
