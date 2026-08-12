@@ -1,6 +1,6 @@
 # Hi 👋, I'm Jatin Kaushik
 
-### A passionate Python developer
+### A passionate developer
 
 - 🔭 I'm currently working on **a Web Dev Project**
 
