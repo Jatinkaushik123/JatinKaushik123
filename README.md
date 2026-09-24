@@ -8,7 +8,7 @@
 
 - 📫 How to reach me **jatin.kaushik2608@gmail.com**
 
-- 📝 I regularly write articles on **[https://www.linkedin.com/in/jatin-kaushik-154312389/](https://www.linkedin.com/in/jatin-kaushik-154312389/)**
+- 📝 I regularly write articles on **[https://www.linkedin.com/in/jatin-kaushik-154312389/]((https://www.linkedin.com/in/jatin-kaushik-bmu/))**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
