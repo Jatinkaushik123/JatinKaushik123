@@ -206,58 +206,144 @@
       <rect x="254" y="0" width="0" height="3" rx="1.5" fill="#247bff" class="about-bar-3"/>
     </g>
 
-    <!-- ==================== SLIDE 1: HACKATHONS & PROTOTYPING ==================== -->
+    <!-- ==================== SLIDE 1: YOUTUBE & CONTENT (1:1 with Udit's Slide 1) ==================== -->
     <g class="about-slide-1">
       <g transform="translate(28, 102)">
         <rect width="369" height="236" rx="14" fill="#091122" stroke="#1d2a45" stroke-width="1"/>
         
-        <g transform="translate(18, 18)">
-          <rect width="333" height="154" rx="10" fill="#060c18" stroke="#172338" stroke-width="1"/>
+        <!-- Inner YouTube Video Container -->
+        <g transform="translate(18, 16)">
+          <rect width="333" height="142" rx="10" fill="#060c18" stroke="#172338" stroke-width="1"/>
           
-          <!-- Portrait Cutout -->
-          <g clip-path="url(#about-photo-crop)" transform="translate(10, 4)">
+          <!-- Portrait Cutout on Left -->
+          <g clip-path="url(#about-photo-crop)" transform="translate(6, 0)">
             <use href="#about-portrait-def" xlink:href="#about-portrait-def"/>
           </g>
           
-          <rect x="18" y="120" width="115" height="20" rx="4" fill="#0b172a" fill-opacity="0.9"/>
-          <text x="75" y="134" text-anchor="middle" fill="#cbd5e1" font-size="8.5" class="about-mono" font-weight="700">BUILD WITH JATIN</text>
+          <!-- Pill Badge on Chest -->
+          <rect x="15" y="110" width="124" height="22" rx="4" fill="#0b172a" fill-opacity="0.94" stroke="#1d2a45" stroke-width="0.8"/>
+          <text x="77" y="124.5" text-anchor="middle" fill="#cbd5e1" font-size="8.5" class="about-mono" font-weight="700" letter-spacing="0.5">BUILD WITH JATIN</text>
 
-          <!-- Red Trophy Emblem -->
-          <g transform="translate(195, 28)">
-            <rect width="64" height="46" rx="12" fill="#ff354f"/>
-            <polygon points="26,14 44,23 26,32" fill="#ffffff"/>
-            <text x="32" y="68" text-anchor="middle" fill="#cbd5e1" font-size="9" class="about-mono" font-weight="700" letter-spacing="1">HACK. BUILD. SHIP.</text>
+          <!-- YouTube Play Icon & Text on the Right (1:1 with Udit) -->
+          <g transform="translate(202, 32)">
+            <rect width="54" height="38" rx="12" fill="#ff0033"/>
+            <polygon points="21,11 36,19 21,27" fill="#ffffff"/>
+            <text x="27" y="64" text-anchor="middle" fill="#38bdf8" font-size="9.5" class="about-mono" font-weight="700" letter-spacing="1">RECORD. EDIT. SHARE.</text>
           </g>
+        </g>
 
-          <!-- Equalizer Waves -->
-          <g transform="translate(10, 150)">
-            <line x1="14" y1="0" x2="14" y2="-12" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-1"/>
-            <line x1="22" y1="0" x2="22" y2="-18" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-2"/>
-            <line x1="30" y1="0" x2="30" y2="-8" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-3"/>
-            <line x1="38" y1="0" x2="38" y2="-22" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-1"/>
-            <line x1="46" y1="0" x2="46" y2="-14" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-2"/>
-            <line x1="54" y1="0" x2="54" y2="-26" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-3"/>
-            <line x1="62" y1="0" x2="62" y2="-10" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-1"/>
-            <line x1="70" y1="0" x2="70" y2="-16" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-2"/>
-            <line x1="78" y1="0" x2="78" y2="-20" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-3"/>
-            <line x1="86" y1="0" x2="86" y2="-12" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-1"/>
-            <line x1="94" y1="0" x2="94" y2="-28" stroke="#ff354f" stroke-width="3" stroke-linecap="round" class="about-wave-2"/>
-            <line x1="102" y1="0" x2="102" y2="-14" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-3"/>
-            <line x1="110" y1="0" x2="110" y2="-22" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-1"/>
-            <line x1="118" y1="0" x2="118" y2="-10" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-2"/>
-            <line x1="126" y1="0" x2="126" y2="-16" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-3"/>
-            <line x1="134" y1="0" x2="134" y2="-8" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-1"/>
-            <line x1="142" y1="0" x2="142" y2="-18" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-2"/>
-            <line x1="150" y1="0" x2="150" y2="-12" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-3"/>
-          </g>
+        <!-- Waveform Preview Track (Positioned BELOW the picture, animated, 1:1 with Udit) -->
+        <g>
+        <line x1="24.0" y1="189.0" x2="24.0" y2="201.0" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-1">
+          <animate attributeName="y1" values="189.0;184.5;189.0" dur="0.9s" repeatCount="indefinite"/>
+          <animate attributeName="y2" values="201.0;205.5;201.0" dur="0.9s" repeatCount="indefinite"/>
+        </line>
+        <line x1="32.4" y1="186.0" x2="32.4" y2="204.0" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-2">
+          <animate attributeName="y1" values="186.0;190.9;186.0" dur="1.18s" repeatCount="indefinite"/>
+          <animate attributeName="y2" values="204.0;199.1;204.0" dur="1.18s" repeatCount="indefinite"/>
+        </line>
+        <line x1="40.8" y1="191.0" x2="40.8" y2="199.0" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-3">
+          <animate attributeName="y1" values="191.0;188.0;191.0" dur="1.46s" repeatCount="indefinite"/>
+          <animate attributeName="y2" values="199.0;202.0;199.0" dur="1.46s" repeatCount="indefinite"/>
+        </line>
+        <line x1="49.2" y1="184.0" x2="49.2" y2="206.0" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-1">
+          <animate attributeName="y1" values="184.0;190.1;184.0" dur="1.74s" repeatCount="indefinite"/>
+          <animate attributeName="y2" values="206.0;199.9;206.0" dur="1.74s" repeatCount="indefinite"/>
+        </line>
+        <line x1="57.6" y1="188.0" x2="57.6" y2="202.0" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-2">
+          <animate attributeName="y1" values="188.0;182.8;188.0" dur="0.9s" repeatCount="indefinite"/>
+          <animate attributeName="y2" values="202.0;207.2;202.0" dur="0.9s" repeatCount="indefinite"/>
+        </line>
+        <line x1="66.0" y1="182.0" x2="66.0" y2="208.0" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-3">
+          <animate attributeName="y1" values="182.0;189.2;182.0" dur="1.18s" repeatCount="indefinite"/>
+          <animate attributeName="y2" values="208.0;200.8;208.0" dur="1.18s" repeatCount="indefinite"/>
+        </line>
+        <line x1="74.4" y1="190.0" x2="74.4" y2="200.0" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-1">
+          <animate attributeName="y1" values="190.0;186.2;190.0" dur="1.46s" repeatCount="indefinite"/>
+          <animate attributeName="y2" values="200.0;203.8;200.0" dur="1.46s" repeatCount="indefinite"/>
+        </line>
+        <line x1="82.8" y1="187.0" x2="82.8" y2="203.0" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-2">
+          <animate attributeName="y1" values="187.0;191.4;187.0" dur="1.74s" repeatCount="indefinite"/>
+          <animate attributeName="y2" values="203.0;198.6;203.0" dur="1.74s" repeatCount="indefinite"/>
+        </line>
+        <line x1="91.2" y1="185.0" x2="91.2" y2="205.0" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-3">
+          <animate attributeName="y1" values="185.0;190.5;185.0" dur="0.9s" repeatCount="indefinite"/>
+          <animate attributeName="y2" values="205.0;199.5;205.0" dur="0.9s" repeatCount="indefinite"/>
+        </line>
+        <line x1="99.6" y1="189.0" x2="99.6" y2="201.0" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-1">
+          <animate attributeName="y1" values="189.0;184.5;189.0" dur="1.18s" repeatCount="indefinite"/>
+          <animate attributeName="y2" values="201.0;205.5;201.0" dur="1.18s" repeatCount="indefinite"/>
+        </line>
+        <line x1="108.0" y1="181.0" x2="108.0" y2="209.0" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-2">
+          <animate attributeName="y1" values="181.0;188.7;181.0" dur="1.46s" repeatCount="indefinite"/>
+          <animate attributeName="y2" values="209.0;201.3;209.0" dur="1.46s" repeatCount="indefinite"/>
+        </line>
+        <line x1="116.4" y1="188.0" x2="116.4" y2="202.0" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-3">
+          <animate attributeName="y1" values="188.0;182.8;188.0" dur="1.74s" repeatCount="indefinite"/>
+          <animate attributeName="y2" values="202.0;207.2;202.0" dur="1.74s" repeatCount="indefinite"/>
+        </line>
+        <line x1="124.8" y1="184.0" x2="124.8" y2="206.0" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-1">
+          <animate attributeName="y1" values="184.0;190.1;184.0" dur="0.9s" repeatCount="indefinite"/>
+          <animate attributeName="y2" values="206.0;199.9;206.0" dur="0.9s" repeatCount="indefinite"/>
+        </line>
+        <line x1="133.2" y1="190.0" x2="133.2" y2="200.0" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-2">
+          <animate attributeName="y1" values="190.0;186.2;190.0" dur="1.18s" repeatCount="indefinite"/>
+          <animate attributeName="y2" values="200.0;203.8;200.0" dur="1.18s" repeatCount="indefinite"/>
+        </line>
+        <line x1="141.6" y1="187.0" x2="141.6" y2="203.0" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-3">
+          <animate attributeName="y1" values="187.0;191.4;187.0" dur="1.46s" repeatCount="indefinite"/>
+          <animate attributeName="y2" values="203.0;198.6;203.0" dur="1.46s" repeatCount="indefinite"/>
+        </line>
+        <line x1="150.0" y1="191.0" x2="150.0" y2="199.0" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-1">
+          <animate attributeName="y1" values="191.0;188.0;191.0" dur="1.74s" repeatCount="indefinite"/>
+          <animate attributeName="y2" values="199.0;202.0;199.0" dur="1.74s" repeatCount="indefinite"/>
+        </line>
+        <line x1="158.4" y1="186.0" x2="158.4" y2="204.0" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-2">
+          <animate attributeName="y1" values="186.0;190.9;186.0" dur="0.9s" repeatCount="indefinite"/>
+          <animate attributeName="y2" values="204.0;199.1;204.0" dur="0.9s" repeatCount="indefinite"/>
+        </line>
+        <line x1="166.8" y1="189.0" x2="166.8" y2="201.0" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-3">
+          <animate attributeName="y1" values="189.0;184.5;189.0" dur="1.18s" repeatCount="indefinite"/>
+          <animate attributeName="y2" values="201.0;205.5;201.0" dur="1.18s" repeatCount="indefinite"/>
+        </line>
+        <line x1="175.2" y1="183.0" x2="175.2" y2="207.0" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-1">
+          <animate attributeName="y1" values="183.0;189.6;183.0" dur="1.46s" repeatCount="indefinite"/>
+          <animate attributeName="y2" values="207.0;200.4;207.0" dur="1.46s" repeatCount="indefinite"/>
+        </line>
+        <line x1="183.6" y1="188.0" x2="183.6" y2="202.0" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-2">
+          <animate attributeName="y1" values="188.0;182.8;188.0" dur="1.74s" repeatCount="indefinite"/>
+          <animate attributeName="y2" values="202.0;207.2;202.0" dur="1.74s" repeatCount="indefinite"/>
+        </line>
+        <line x1="192.0" y1="185.0" x2="192.0" y2="205.0" stroke="#247bff" stroke-width="3" stroke-linecap="round" class="about-wave-3">
+          <animate attributeName="y1" values="185.0;190.5;185.0" dur="0.9s" repeatCount="indefinite"/>
+          <animate attributeName="y2" values="205.0;199.5;205.0" dur="0.9s" repeatCount="indefinite"/>
+        </line>
+        <!-- Red Playback Scrubber Needle (1:1 with Udit's Reference) -->
+        <line x1="202" y1="178" x2="202" y2="212" stroke="#ff354f" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="210.4" y1="188.0" x2="210.4" y2="202.0" stroke="#1e3458" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
+        <line x1="218.8" y1="191.0" x2="218.8" y2="199.0" stroke="#1e3458" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
+        <line x1="227.2" y1="186.0" x2="227.2" y2="204.0" stroke="#1e3458" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
+        <line x1="235.6" y1="189.0" x2="235.6" y2="201.0" stroke="#1e3458" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
+        <line x1="244.0" y1="192.0" x2="244.0" y2="198.0" stroke="#1e3458" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
+        <line x1="252.4" y1="187.0" x2="252.4" y2="203.0" stroke="#1e3458" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
+        <line x1="260.8" y1="190.0" x2="260.8" y2="200.0" stroke="#1e3458" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
+        <line x1="269.2" y1="188.0" x2="269.2" y2="202.0" stroke="#1e3458" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
+        <line x1="277.6" y1="185.0" x2="277.6" y2="205.0" stroke="#1e3458" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
+        <line x1="286.0" y1="191.0" x2="286.0" y2="199.0" stroke="#1e3458" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
+        <line x1="294.4" y1="189.0" x2="294.4" y2="201.0" stroke="#1e3458" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
+        <line x1="302.8" y1="192.0" x2="302.8" y2="198.0" stroke="#1e3458" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
+        <line x1="311.2" y1="190.0" x2="311.2" y2="200.0" stroke="#1e3458" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
+        <line x1="319.6" y1="192.0" x2="319.6" y2="198.0" stroke="#1e3458" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
+        <line x1="328.0" y1="191.0" x2="328.0" y2="199.0" stroke="#1e3458" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
+        <line x1="336.4" y1="192.5" x2="336.4" y2="197.5" stroke="#1e3458" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
         </g>
       </g>
 
       <!-- Bottom Callout Area -->
       <g transform="translate(28, 362)">
-        <text x="0" y="0" fill="#64748b" font-size="10.5" class="about-mono" letter-spacing="1">MAKE IT CLICK.</text>
-        <text x="0" y="32" fill="#ffffff" font-size="24" class="about-display" font-weight="700">Hackathons &amp; Prototyping</text>
-        <text x="0" y="54" fill="#94a3b8" font-size="13" class="about-mono">Real-world systems, built for rapid impact.</text>
+        <text x="0" y="0" fill="#64748b" font-size="10.5" class="about-mono" letter-spacing="1">RECORD. SHARE. GROW.</text>
+        <text x="0" y="32" fill="#ffffff" font-size="24" class="about-display" font-weight="700">YouTube &amp; Content Creation</text>
+        <text x="0" y="54" fill="#94a3b8" font-size="13" class="about-mono">Documenting the journey, sharing engineering lessons.</text>
 
         <g transform="translate(0, 84)">
           <text x="0" y="0" fill="#475569" font-size="11" class="about-mono">01  /  03</text>
