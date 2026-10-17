@@ -21,7 +21,7 @@
       font-family: 'about-Mono', 'JetBrains Mono', 'SF Mono', Consolas, 'Courier New', monospace;
     }
     
-      @keyframes aboutCursor { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+      @keyframes aboutCursor { 0%, 49.9% { opacity: 1; } 50%, 100% { opacity: 0; } }
       @keyframes aboutWave1 { 0%, 100% { height: 12px; } 50% { height: 26px; } }
       @keyframes aboutWave2 { 0%, 100% { height: 24px; } 50% { height: 8px; } }
       @keyframes aboutWave3 { 0%, 100% { height: 16px; } 50% { height: 30px; } }
@@ -108,51 +108,53 @@
     <text x="28" y="38" fill="#64748b" font-size="10.5" class="about-mono" letter-spacing="1">01  /  FROM THOUGHT TO THING</text>
     <text x="28" y="72" fill="#ffffff" font-size="26" class="about-display" font-weight="700">IDEAS. BUILT DIFFERENT.</text>
 
-    <!-- Code Block / Terminal Container -->
+    <!-- Code Block / Terminal Container (1:1 with Udit's Terminal Reference) -->
     <g transform="translate(28, 96)">
-      <rect width="369" height="142" rx="12" fill="#0a1224" stroke="#1d2a45" stroke-width="1"/>
+      <rect width="369" height="152" rx="12" fill="#091122" stroke="#1d2a45" stroke-width="1"/>
       
-      <!-- Top Dots + Path -->
-      <circle cx="16" cy="18" r="3.5" fill="#ff354f"/>
-      <circle cx="27" cy="18" r="3.5" fill="#f59e0b"/>
-      <circle cx="38" cy="18" r="3.5" fill="#10b981"/>
-      <text x="56" y="21" fill="#64748b" font-size="10" class="about-mono">github.com / Jatinkaushik123 / build</text>
+      <!-- Top Dots (Udit's brand theme: red, blue, cyan) + Path -->
+      <circle cx="16" cy="18" r="3.2" fill="#ff354f"/>
+      <circle cx="26" cy="18" r="3.2" fill="#247bff"/>
+      <circle cx="36" cy="18" r="3.2" fill="#8cbfff"/>
+      <text x="52" y="21.5" fill="#64748b" font-size="10" class="about-mono">github.com / Jatinkaushik123 / build</text>
 
-      <!-- Code Line -->
-      <text x="18" y="52" fill="#38bdf8" font-size="12" class="about-mono">&gt; turn_curiosity_into_impact()</text>
-      <rect x="252" y="40" width="7" height="14" fill="#38bdf8" class="about-cursor"/>
+      <!-- Command Line with authentic terminal line-height & blinking cursor -->
+      <text x="18" y="49" fill="#38bdf8" font-size="12" class="about-mono">&gt; turn_curiosity_into_impact()</text>
+      <rect x="246" y="36.5" width="7.5" height="14.5" rx="1" fill="#38bdf8" class="about-cursor">
+        <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.5;0.51;0.99;1" dur="1s" repeatCount="indefinite"/>
+      </rect>
 
-      <!-- 3 Pipeline Step Boxes Connected with Arrows -->
-      <g transform="translate(18, 72)">
+      <!-- 3 Pipeline Step Boxes Connected with Arrows (Spacious, prominent numbers, 1:1 with Udit) -->
+      <g transform="translate(18, 73)">
         <!-- Box 1: 01 IDEATE -->
-        <rect width="92" height="52" rx="8" fill="#111c33" stroke="#247bff" stroke-width="1.2"/>
-        <text x="12" y="24" fill="#247bff" font-size="14" class="about-display" font-weight="700">01</text>
-        <text x="12" y="40" fill="#f8fafc" font-size="9" class="about-mono" font-weight="700">IDEATE</text>
+        <rect width="94" height="58" rx="8" fill="#0d1d35" stroke="#247bff" stroke-width="1.2"/>
+        <text x="14" y="28" fill="#247bff" font-size="20" class="about-display" font-weight="700">01</text>
+        <text x="14" y="46" fill="#f8fafc" font-size="9.5" class="about-mono" font-weight="700" letter-spacing="0.8">IDEATE</text>
 
         <!-- Arrow 1 -->
-        <path d="M100 26 L112 26 M108 21 L113 26 L108 31" stroke="#334155" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <path d="M 100 29 L 112 29 M 107 24 L 112 29 L 107 34" stroke="#334155" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 
         <!-- Box 2: 02 ENGINEER -->
-        <g transform="translate(122, 0)">
-          <rect width="102" height="52" rx="8" fill="#111c33" stroke="#334155" stroke-width="1"/>
-          <text x="12" y="24" fill="#64748b" font-size="14" class="about-display" font-weight="700">02</text>
-          <text x="12" y="40" fill="#f8fafc" font-size="9" class="about-mono" font-weight="700">ENGINEER</text>
+        <g transform="translate(118, 0)">
+          <rect width="97" height="58" rx="8" fill="#0d1d35" stroke="#1e3458" stroke-width="1"/>
+          <text x="14" y="28" fill="#38bdf8" font-size="20" class="about-display" font-weight="700">02</text>
+          <text x="14" y="46" fill="#f8fafc" font-size="9.5" class="about-mono" font-weight="700" letter-spacing="0.8">ENGINEER</text>
         </g>
 
         <!-- Arrow 2 -->
-        <path d="M234 26 L246 26 M242 21 L247 26 L242 31" stroke="#334155" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <path d="M 221 29 L 233 29 M 228 24 L 233 29 L 228 34" stroke="#334155" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 
         <!-- Box 3: 03 SHIP -->
-        <g transform="translate(256, 0)">
-          <rect width="92" height="52" rx="8" fill="#111c33" stroke="#ff354f" stroke-width="1.2"/>
-          <text x="12" y="24" fill="#ff354f" font-size="14" class="about-display" font-weight="700">03</text>
-          <text x="12" y="40" fill="#f8fafc" font-size="9" class="about-mono" font-weight="700">SHIP</text>
+        <g transform="translate(239, 0)">
+          <rect width="94" height="58" rx="8" fill="#0d1d35" stroke="#ff354f" stroke-width="1.2"/>
+          <text x="14" y="28" fill="#ff354f" font-size="20" class="about-display" font-weight="700">03</text>
+          <text x="14" y="46" fill="#f8fafc" font-size="9.5" class="about-mono" font-weight="700" letter-spacing="0.8">SHIP</text>
         </g>
       </g>
     </g>
 
     <!-- 3 CAPABILITY ROWS (Clean Icons & Text, 1:1 with Udit) -->
-    <g transform="translate(28, 260)">
+    <g transform="translate(28, 264)">
       <!-- Row 1: Modern Web & App Dev -->
       <g transform="translate(0, 0)">
         <path d="M8 4 L2 10 L8 16 M14 4 L20 10 L14 16" stroke="#247bff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(6, 4)"/>
