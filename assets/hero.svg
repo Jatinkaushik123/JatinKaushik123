@@ -119,11 +119,13 @@
       </g>
     </g>
 
-    <!-- 'OPEN TO COLLABS' Pill Badge (1:1 with Udit's original) -->
+    <!-- 'OPEN TO COLLABS' Pill Badge (1:1 with Udit's screenshot) -->
     <g transform="translate(36, 70)">
-      <rect width="132" height="24" rx="5" fill="#0d1b32" stroke="#1e3052" stroke-width="1"/>
-      <text x="66" y="15.5" text-anchor="middle" fill="#e2e8f0" font-size="9" class="hero-mono" font-weight="700" letter-spacing="1">OPEN TO COLLABS</text>
-      <circle cx="150" cy="12" r="4" fill="#247bff" class="hero-dot-blink"/>
+      <rect width="128" height="26" rx="6" fill="#0b1a2e" stroke="#1c3558" stroke-width="1"/>
+      <text x="12" y="16.5" fill="#cbd5e1" font-size="9.5" class="hero-mono" font-weight="700">OPEN TO COLLABS</text>
+      <circle cx="148" cy="13" r="3.8" fill="#2563eb" class="hero-dot-blink">
+        <animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
     </g>
 
     <!-- GREETING & LARGE DISPLAY TYPOGRAPHY -->
