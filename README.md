@@ -1,5 +1,3 @@
-# Jatin Kaushik — GitHub Profile
-
 ![Intro](./assets/hero.svg?v=1)
 
 ![About](./assets/about-life.svg?v=1)
@@ -10,7 +8,7 @@
 
 ![Connect](./assets/connect.svg?v=1)
 
-<!-- Clickable Social Links (SVGs rendered as images on GitHub are non-interactive; use direct links below) -->
+<!-- Clickable Social Badges below Connect Banner -->
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jatin-kaushik-bmu/)
@@ -22,13 +20,13 @@
 
 ---
 
-### 🚀 Featured Systems & Projects
+### 🚀 Things I've Built
 
-| Project | Domain / Type | Stack | Description & Impact |
+| Project | Domain | Stack | What it does |
 | :--- | :--- | :--- | :--- |
-| **[Modular Inventory Management](https://github.com/Jatinkaushik123)** | Full-Stack Platform | `React` `Vite` `Node.js` `Express` `MongoDB` | High-efficiency modular inventory management platform engineered for the **Odoo Hackathon (2026 Qualifier)**. Features real-time stock sync, audit logs, and scalable modular architecture. |
-| **[MausamCrop](https://github.com/Jatinkaushik123)** | Agri-Tech AI Engine | `Python` `Machine Learning` `Vite` | Weather-based agricultural crop and soil recommendation engine delivering precision agronomic insights from environmental data feeds. |
-| **[SIH Anomaly Detection](https://github.com/Jatinkaushik123)** | GovTech / AI Auditing | `Python` `Data Pipelines` `Audit Models` | AI-driven anomaly and fund-leakage audit pipeline built for MPLADS transparency during **Smart India Hackathon (SIH 2026 Team Lead)**. |
+| **[Modular Inventory Management](https://github.com/Jatinkaushik123)** | Full-Stack Platform | `React` `Vite` `Node.js` `Express` `MongoDB` | High-efficiency modular inventory management platform built for **Odoo Hackathon (2026 Qualifier)**. Real-time updates, audit log engine & modular architecture. |
+| **[MausamCrop](https://github.com/Jatinkaushik123)** | Agri-Tech ML Engine | `Python` `Machine Learning` `Vite` | Weather-based agricultural crop and soil recommendation engine delivering precision agronomic insights from environmental data feeds. |
+| **[SIH Anomaly Detection](https://github.com/Jatinkaushik123)** | GovTech AI Pipeline | `Python` `AI Pipelines` `MPLADS` | AI-driven anomaly and fund-leakage audit pipeline for MPLADS transparency during **Smart India Hackathon (SIH 2026 Team Lead)**. |
 
 ---
 
