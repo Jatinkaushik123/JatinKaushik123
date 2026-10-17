@@ -8,15 +8,16 @@
 
 ![Connect](./assets/connect.svg?v=1)
 
-<!-- Clickable Social Badges below Connect Banner -->
-<div align="center">
+<p align="center">
+  <a href="https://www.linkedin.com/in/jatin-kaushik-bmu/">LinkedIn</a> &nbsp;•&nbsp;
+  <a href="https://github.com/Jatinkaushik123">GitHub — Jatinkaushik123</a> &nbsp;•&nbsp;
+  <a href="https://www.instagram.com/simply._.aadi/">Instagram — @simply._.aadi</a> &nbsp;•&nbsp;
+  <a href="https://discord.gg/6UdG4qdnEG">Discord Community</a>
+</p>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jatin-kaushik-bmu/)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Jatinkaushik123)
-[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/6UdG4qdnEG)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/simply._.aadi/)
-
-</div>
+<p align="center">
+  <em>Curious by default. Building with intent.</em>
+</p>
 
 ---
 
