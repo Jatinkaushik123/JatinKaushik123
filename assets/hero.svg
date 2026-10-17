@@ -35,8 +35,34 @@
       .hero-dot-pulse {
         animation: heroPulseDot 2s ease-in-out infinite;
       }
+      @keyframes heroRole1 {
+        0%, 20% { opacity: 1; transform: translateY(0px); }
+        25%, 95% { opacity: 0; transform: translateY(-6px); }
+        100% { opacity: 1; transform: translateY(0px); }
+      }
+      @keyframes heroRole2 {
+        0%, 20% { opacity: 0; transform: translateY(6px); }
+        25%, 45% { opacity: 1; transform: translateY(0px); }
+        50%, 100% { opacity: 0; transform: translateY(-6px); }
+      }
+      @keyframes heroRole3 {
+        0%, 45% { opacity: 0; transform: translateY(6px); }
+        50%, 70% { opacity: 1; transform: translateY(0px); }
+        75%, 100% { opacity: 0; transform: translateY(-6px); }
+      }
+      @keyframes heroRole4 {
+        0%, 70% { opacity: 0; transform: translateY(6px); }
+        75%, 95% { opacity: 1; transform: translateY(0px); }
+        100% { opacity: 0; transform: translateY(-6px); }
+      }
+      .hero-role-1 { animation: heroRole1 10s infinite ease-in-out; }
+      .hero-role-2 { animation: heroRole2 10s infinite ease-in-out; }
+      .hero-role-3 { animation: heroRole3 10s infinite ease-in-out; }
+      .hero-role-4 { animation: heroRole4 10s infinite ease-in-out; }
       @media (prefers-reduced-motion: reduce) {
-        .hero-portrait-anim, .hero-dot-pulse { animation: none !important; }
+        .hero-portrait-anim, .hero-dot-pulse, .hero-role-1, .hero-role-2, .hero-role-3, .hero-role-4 { animation: none !important; }
+        .hero-role-1 { opacity: 1 !important; transform: none !important; }
+        .hero-role-2, .hero-role-3, .hero-role-4 { display: none !important; }
       }
     </style>
 
@@ -116,9 +142,20 @@
       </g>
     </g>
 
-    <!-- CURRENT TITLE: Tech Lead -->
+    <!-- CYCLING ROLES (1:1 with Udit's Image 1) -->
     <g transform="translate(36, 292)">
-      <text x="0" y="0" fill="#ffffff" font-size="22" class="hero-display" font-weight="700">ACM BMU Tech Lead</text>
+      <g class="hero-role-1">
+        <text x="0" y="0" fill="#ffffff" font-size="22" class="hero-display" font-weight="700">ACM BMU Tech Lead</text>
+      </g>
+      <g class="hero-role-2">
+        <text x="0" y="0" fill="#ffffff" font-size="22" class="hero-display" font-weight="700">B.Tech Student @ BMU</text>
+      </g>
+      <g class="hero-role-3">
+        <text x="0" y="0" fill="#ffffff" font-size="22" class="hero-display" font-weight="700">Full-Stack Explorer &amp; Builder</text>
+      </g>
+      <g class="hero-role-4">
+        <text x="0" y="0" fill="#ffffff" font-size="22" class="hero-display" font-weight="700">Problem Solver &amp; Mentor</text>
+      </g>
     </g>
 
     <!-- TWO-LINE BIO -->
