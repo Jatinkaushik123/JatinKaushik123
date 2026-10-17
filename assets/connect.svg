@@ -97,8 +97,7 @@
     <!-- CARD 1: LinkedIn (Blue Accent Line) -->
     <g transform="translate(0, 84)">
       <rect width="472" height="74" rx="10" fill="#091224" stroke="#1d2a45" stroke-width="1"/>
-      <!-- Blue Vertical Indicator Strip on Left -->
-      <path d="M0 10 Q0 0 10 0 L10 74 L0 74 Z" fill="#0a66c2"/>
+      <rect x="0" y="0" width="4" height="74" rx="2" fill="#0a66c2"/>
       
       <!-- Blue Square LinkedIn Icon -->
       <g transform="translate(20, 18)">
@@ -111,16 +110,18 @@
       <text x="74" y="34" fill="#ffffff" font-size="18" class="conn-display" font-weight="700">LinkedIn</text>
       <text x="74" y="52" fill="#94a3b8" font-size="11.5" class="conn-mono">Connect &amp; exchange ideas</text>
 
-      <!-- Nudging Arrow on Far Right -->
-      <g transform="translate(435, 37)" class="conn-nudge">
-        <path d="M0 0 L12 0 M6 -6 L12 0 L6 6" stroke="#247bff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Nudging Arrow on Far Right (Back of the card) -->
+      <g transform="translate(435, 37)">
+        <g class="conn-nudge">
+          <path d="M0 0 L12 0 M6 -6 L12 0 L6 6" stroke="#247bff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
       </g>
     </g>
 
     <!-- CARD 2: GitHub (Red Accent Line) -->
     <g transform="translate(0, 168)">
       <rect width="472" height="74" rx="10" fill="#091224" stroke="#1d2a45" stroke-width="1"/>
-      <path d="M0 10 Q0 0 10 0 L10 74 L0 74 Z" fill="#ff354f"/>
+      <rect x="0" y="0" width="4" height="74" rx="2" fill="#ff354f"/>
       
       <!-- Red Square GitHub Icon -->
       <g transform="translate(20, 18)">
@@ -133,15 +134,17 @@
       <text x="74" y="34" fill="#ffffff" font-size="18" class="conn-display" font-weight="700">GitHub</text>
       <text x="74" y="52" fill="#94a3b8" font-size="11.5" class="conn-mono">Code repositories &amp; open source</text>
 
-      <g transform="translate(435, 37)" class="conn-nudge">
-        <path d="M0 0 L12 0 M6 -6 L12 0 L6 6" stroke="#ff354f" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <g transform="translate(435, 37)">
+        <g class="conn-nudge">
+          <path d="M0 0 L12 0 M6 -6 L12 0 L6 6" stroke="#ff354f" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
       </g>
     </g>
 
     <!-- CARD 3: Instagram (Red Accent Line) -->
     <g transform="translate(0, 252)">
       <rect width="472" height="74" rx="10" fill="#091224" stroke="#1d2a45" stroke-width="1"/>
-      <path d="M0 10 Q0 0 10 0 L10 74 L0 74 Z" fill="#ff354f"/>
+      <rect x="0" y="0" width="4" height="74" rx="2" fill="#ff354f"/>
       
       <!-- Red Square Instagram Icon -->
       <g transform="translate(20, 18)">
@@ -154,15 +157,17 @@
       <text x="74" y="34" fill="#ffffff" font-size="18" class="conn-display" font-weight="700">Instagram</text>
       <text x="74" y="52" fill="#94a3b8" font-size="11.5" class="conn-mono">@simply._.aadi</text>
 
-      <g transform="translate(435, 37)" class="conn-nudge">
-        <path d="M0 0 L12 0 M6 -6 L12 0 L6 6" stroke="#ff354f" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <g transform="translate(435, 37)">
+        <g class="conn-nudge">
+          <path d="M0 0 L12 0 M6 -6 L12 0 L6 6" stroke="#ff354f" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
       </g>
     </g>
 
     <!-- CARD 4: Discord (Blue Accent Line) -->
     <g transform="translate(0, 336)">
       <rect width="472" height="74" rx="10" fill="#091224" stroke="#1d2a45" stroke-width="1"/>
-      <path d="M0 10 Q0 0 10 0 L10 74 L0 74 Z" fill="#247bff"/>
+      <rect x="0" y="0" width="4" height="74" rx="2" fill="#247bff"/>
       
       <!-- Blue Square Discord Icon -->
       <g transform="translate(20, 18)">
@@ -175,8 +180,10 @@
       <text x="74" y="34" fill="#ffffff" font-size="18" class="conn-display" font-weight="700">Discord</text>
       <text x="74" y="52" fill="#94a3b8" font-size="11.5" class="conn-mono">Community &amp; direct chat</text>
 
-      <g transform="translate(435, 37)" class="conn-nudge">
-        <path d="M0 0 L12 0 M6 -6 L12 0 L6 6" stroke="#247bff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <g transform="translate(435, 37)">
+        <g class="conn-nudge">
+          <path d="M0 0 L12 0 M6 -6 L12 0 L6 6" stroke="#247bff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
       </g>
     </g>
   </g>
