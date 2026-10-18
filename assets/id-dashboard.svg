@@ -39,8 +39,16 @@
       .dash-foil-anim {
         animation: dashFoil 5s ease-in-out infinite;
       }
+      @keyframes dashPhotoBorder {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -753; }
+      }
+      .dash-photo-laser {
+        stroke-dasharray: 95 658;
+        animation: dashPhotoBorder 3.5s linear infinite;
+      }
       @media (prefers-reduced-motion: reduce) {
-        .dash-lanyard, .dash-foil-anim { animation: none !important; }
+        .dash-lanyard, .dash-foil-anim, .dash-photo-laser { animation: none !important; }
       }
     </style>
 
@@ -148,6 +156,11 @@
       <rect width="125" height="24" rx="6" fill="#247bff" fill-opacity="0.95"/>
       <text x="62" y="16" text-anchor="middle" fill="#ffffff" font-size="9.5" class="dash-mono" font-weight="700">ACM BMU TECH LEAD</text>
     </g>
+
+    <!-- Animated Perimeter Laser Line around Photo Frame -->
+    <rect x="90" y="140" width="210" height="175" rx="10" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.9" stroke-linecap="round" class="dash-photo-laser">
+      <animate attributeName="stroke-dashoffset" from="0" to="-753" dur="3.5s" repeatCount="indefinite"/>
+    </rect>
 
     <!-- Name & Info -->
     <g transform="translate(90, 345)">
