@@ -21,22 +21,27 @@
 
 ---
 
-### 🚀 Things I've Built
+![Projects & Showcase](./assets/projects.svg?v=1)
+
+<details>
+<summary><strong>📋 View Projects &amp; Credentials (Accessible Text Table)</strong></summary>
+
+<br/>
 
 | Project | Domain | Stack | What it does |
 | :--- | :--- | :--- | :--- |
-| **[Modular Inventory Management](https://github.com/Jatinkaushik123)** | Full-Stack Platform | `React` `Vite` `Node.js` `Express` `MongoDB` | High-efficiency modular inventory management platform built for **Odoo Hackathon (2026 Qualifier)**. Real-time updates, audit log engine & modular architecture. |
+| **[Modular Inventory Management](https://github.com/Jatinkaushik123)** | Full-Stack Platform | `React` `Vite` `Node.js` `Express` `MongoDB` | High-efficiency modular inventory management platform built for **Odoo Hackathon (2026 Qualifier)**. Real-time updates, audit log engine &amp; modular architecture. |
 | **[MausamCrop](https://github.com/Jatinkaushik123)** | Agri-Tech ML Engine | `Python` `Machine Learning` `Vite` | Weather-based agricultural crop and soil recommendation engine delivering precision agronomic insights from environmental data feeds. |
 | **[SIH Anomaly Detection](https://github.com/Jatinkaushik123)** | GovTech AI Pipeline | `Python` `AI Pipelines` `MPLADS` | AI-driven anomaly and fund-leakage audit pipeline for MPLADS transparency during **Smart India Hackathon (SIH 2026 Team Lead)**. |
-| **[Web Development Community Project](https://github.com/Jatinkaushik123)** | Community Dev Platform | `JavaScript` `HTML5` `CSS3` `Full-Stack` | Collaborative open-source community platform empowering student developers, tech workshops & ACM BMU resources. |
+| **[Web Development Community Project](https://github.com/Jatinkaushik123)** | Community Dev Platform | `JavaScript` `HTML5` `CSS3` `Full-Stack` | Collaborative open-source community platform empowering student developers, tech workshops &amp; ACM BMU resources. |
 
----
-
-### 🛡️ Verified Credentials & Honors
+#### 🛡️ Verified Credentials &amp; Honors
 
 - **Odoo Hackathon Qualifier (2026)** — High-efficiency Modular Inventory Platform
 - **Smart India Hackathon (SIH) 2026 Team Lead** — AI-Driven Anomaly Detection Pipeline
-- **ACM BMU Student Chapter Tech Lead** — Guiding developer initiatives, workshops & competitive coding
+- **ACM BMU Student Chapter Tech Lead** — Guiding developer initiatives, workshops &amp; competitive coding
+
+</details>
 
 ---
 
