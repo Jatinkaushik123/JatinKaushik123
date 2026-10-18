@@ -21,8 +21,6 @@
 
 ---
 
-![Projects & Showcase](./assets/projects.svg?v=1)
-
 <details>
 <summary><strong>📋 View Projects &amp; Credentials (Accessible Text Table)</strong></summary>
 
