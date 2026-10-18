@@ -57,90 +57,106 @@
       font-family: 'dash-Mono', 'JetBrains Mono', 'SF Mono', Consolas, 'Courier New', monospace;
     }
     .proj-card {
-      transition: all 0.25s ease;
+      transition: all 0.2s ease;
     }
     .proj-card:hover {
       stroke: #00f3ff;
+      stroke-opacity: 0.8;
     }
     </style>
 
+    <!-- Outer Frame Border Gradient: Cyan -> Blue -> Red -->
     <linearGradient id="proj-border" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#00f3ff" stop-opacity="0.8"/>
       <stop offset="50%" stop-color="#247bff" stop-opacity="0.2"/>
       <stop offset="100%" stop-color="#ff354f" stop-opacity="0.8"/>
     </linearGradient>
 
-    <!-- Subtle Blue / Cyan Background Grid -->
+    <!-- Subtle Blue Coordinate Dots & Grid Pattern -->
     <pattern id="proj-grid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#247bff" stroke-width="0.8" stroke-opacity="0.08"/>
-      <circle cx="0" cy="0" r="0.8" fill="#00f3ff" fill-opacity="0.2"/>
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#247bff" stroke-width="0.75" stroke-opacity="0.08"/>
+      <circle cx="0" cy="0" r="0.9" fill="#00f3ff" fill-opacity="0.2"/>
     </pattern>
 
-    <!-- Corner Crosshairs Pattern -->
+    <!-- Glowing Cyan Indicator Dot Filter -->
+    <filter id="proj-glow-cyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Corner Crosshair Accent Symbol -->
     <g id="proj-crosshair">
       <path d="M -8 0 L 8 0 M 0 -8 L 0 8" stroke="#00f3ff" stroke-width="0.8" stroke-opacity="0.5"/>
-      <circle cx="0" cy="0" r="4" fill="none" stroke="#00f3ff" stroke-width="0.5" stroke-opacity="0.3"/>
+      <circle cx="0" cy="0" r="3.5" fill="none" stroke="#00f3ff" stroke-width="0.5" stroke-opacity="0.3"/>
     </g>
 
-    <!-- External Link Arrow Icon -->
+    <!-- External Link Arrow (↗) -->
     <g id="proj-arrow">
-      <path d="M 0 6 L 6 0 M 6 0 L 1.5 0 M 6 0 L 6 4.5" fill="none" stroke="#00f3ff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 0 6.5 L 6.5 0 M 6.5 0 L 1.8 0 M 6.5 0 L 6.5 4.7" fill="none" stroke="#00f3ff" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
   </defs>
 
-  <!-- ==================== BACKGROUND ==================== -->
-  <rect width="880" height="635" rx="20" fill="#070b16"/>
+  <!-- ==================== OVERALL FRAME & THEME ==================== -->
+  <!-- Dark Slate Background #070b14 matching Section 04 and 05 -->
+  <rect width="880" height="635" rx="20" fill="#070b14"/>
   <rect width="880" height="635" fill="url(#proj-grid)"/>
   <rect width="878" height="633" x="1" y="1" rx="19" fill="none" stroke="url(#proj-border)" stroke-width="1.2"/>
 
-  <!-- Corner Crosshairs -->
+  <!-- Four Corner Crosshair Markers -->
   <use href="#proj-crosshair" x="24" y="24"/>
   <use href="#proj-crosshair" x="856" y="24"/>
   <use href="#proj-crosshair" x="24" y="611"/>
   <use href="#proj-crosshair" x="856" y="611"/>
 
-  <!-- Subtle Faint Watermark Text -->
-  <text x="36" y="250" fill="#0a1224" font-size="75" class="proj-display" font-weight="700">SHOWCASE</text>
+  <!-- Background Watermark Text -->
+  <text x="36" y="250" fill="#091325" font-size="75" class="proj-display" font-weight="700">SHOWCASE</text>
 
   <!-- ==================== HEADER ==================== -->
   <g transform="translate(36, 36)">
-    <!-- Section Tag -->
+    <!-- Top tag: "06 / SHOWCASE & IMPACT" in small cyan monospace font -->
     <text x="0" y="14" fill="#00f3ff" font-size="11" class="proj-mono" font-weight="700" letter-spacing="1.5">06  /  SHOWCASE &amp; IMPACT</text>
     
-    <!-- Headline -->
+    <!-- Main title: "THINGS I'VE BUILT." in bold condensed white font -->
     <text x="0" y="47" fill="#ffffff" font-size="30" class="proj-display" font-weight="800" letter-spacing="-0.5">THINGS I&apos;VE BUILT.</text>
     
-    <!-- Subtitle -->
+    <!-- Subtitle: "ENGINEERED FOR SCALE, AUDITABILITY & REAL-WORLD UTILITY" in muted tech-font -->
     <text x="0" y="69" fill="#64748b" font-size="11" class="proj-mono" letter-spacing="1">ENGINEERED FOR SCALE, AUDITABILITY &amp; REAL-WORLD UTILITY</text>
 
-    <!-- Top-Right Status Badge -->
+    <!-- Right-side top pill: An elongated dark pill with a glowing cyan dot: "● 4 PRODUCTION REPOS" -->
     <g transform="translate(620, 16)">
-      <rect width="188" height="28" rx="14" fill="#091428" stroke="#00f3ff" stroke-width="0.8" stroke-opacity="0.4"/>
-      <circle cx="16" cy="14" r="3.5" fill="#00f3ff"/>
+      <rect width="188" height="28" rx="14" fill="#0b1324" stroke="#00f3ff" stroke-width="0.8" stroke-opacity="0.4"/>
+      <!-- Glowing cyan dot -->
+      <circle cx="16" cy="14" r="3.5" fill="#00f3ff" filter="url(#proj-glow-cyan)"/>
+      <circle cx="16" cy="14" r="2.5" fill="#ffffff"/>
       <text x="28" y="18" fill="#38bdf8" font-size="9.5" class="proj-mono" font-weight="700" letter-spacing="1">4 PRODUCTION REPOS</text>
     </g>
   </g>
 
-  <!-- ==================== 4 PROJECT CARDS (2x2 GRID) ==================== -->
+  <!-- ==================== GRID LAYOUT (2x2 PROJECT CARDS) ==================== -->
 
-  <!-- CARD 1: Modular Inventory Management (Top Left) -->
+  <!-- ROW 1, CARD 1: Modular Inventory Management (Top Left) -->
   <g transform="translate(36, 125)">
-    <!-- Card Frame -->
-    <rect width="396" height="172" rx="12" fill="#091122" stroke="#1d2a45" stroke-width="1.2" class="proj-card"/>
-    <!-- Neon Cyan Top Accent Bar -->
+    <!-- Dark rounded panel #0d1527 with subtle border -->
+    <rect width="396" height="172" rx="12" fill="#0d1527" stroke="#1d2a45" stroke-width="1.2" class="proj-card"/>
+    <!-- Top Cyan Accent Strip -->
     <rect x="18" y="0" width="80" height="2.5" rx="1.25" fill="#00f3ff"/>
-    <!-- External Link Arrow Top Right -->
+    <!-- External-link arrow (↗) at top right -->
     <use href="#proj-arrow" x="370" y="18"/>
 
-    <!-- Index Number & Domain Badge -->
+    <!-- Header pill: "01" (cyan) + "FULL-STACK PLATFORM" pill badge -->
     <g transform="translate(18, 18)">
-      <text x="0" y="14" fill="#00f3ff" font-size="11" class="proj-mono" font-weight="700">01</text>
-      <!-- Domain Pill Badge -->
-      <rect x="26" y="0" width="138" height="20" rx="4" fill="#08182b" stroke="#00f3ff" stroke-width="0.8" stroke-opacity="0.6"/>
-      <text x="95" y="14" text-anchor="middle" fill="#38bdf8" font-size="9" class="proj-mono" font-weight="700" letter-spacing="0.5">FULL-STACK PLATFORM</text>
+      <!-- "01" (cyan) pill -->
+      <rect x="0" y="0" width="28" height="20" rx="4" fill="#08182b" stroke="#00f3ff" stroke-width="0.8" stroke-opacity="0.5"/>
+      <text x="14" y="14" text-anchor="middle" fill="#00f3ff" font-size="10" class="proj-mono" font-weight="700">01</text>
+      <!-- "FULL-STACK PLATFORM" pill badge -->
+      <rect x="34" y="0" width="144" height="20" rx="4" fill="#08182b" stroke="#00f3ff" stroke-width="0.8" stroke-opacity="0.5"/>
+      <text x="106" y="14" text-anchor="middle" fill="#38bdf8" font-size="9" class="proj-mono" font-weight="700" letter-spacing="0.5">FULL-STACK PLATFORM</text>
     </g>
 
-    <!-- Project Title -->
+    <!-- Title: "Modular Inventory Management" (bold white) -->
     <text x="18" y="66" fill="#ffffff" font-size="16" class="proj-display" font-weight="700">Modular Inventory Management</text>
 
     <!-- Description -->
@@ -148,41 +164,46 @@
     <text x="18" y="106" fill="#94a3b8" font-size="10.8" class="proj-mono">built for Odoo Hackathon (&apos;26 Qualifier). Real-time</text>
     <text x="18" y="122" fill="#94a3b8" font-size="10.8" class="proj-mono">updates, audit log engine &amp; modular architecture.</text>
 
-    <!-- Tech Badges: React, Vite, Node.js, Express, MongoDB -->
+    <!-- Bottom Tech Pills: "React" "Vite" "Node.js" "Express" "MongoDB" -->
     <g transform="translate(18, 138)">
       <!-- React -->
-      <rect x="0" y="0" width="48" height="19" rx="4" fill="#0d1b30" stroke="#1d3558" stroke-width="0.8"/>
-      <text x="24" y="13" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">React</text>
+      <rect x="0" y="0" width="48" height="20" rx="4" fill="#0f1b2f" stroke="#1f3658" stroke-width="0.8"/>
+      <text x="24" y="14" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">React</text>
       <!-- Vite -->
-      <rect x="54" y="0" width="38" height="19" rx="4" fill="#0d1b30" stroke="#1d3558" stroke-width="0.8"/>
-      <text x="73" y="13" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">Vite</text>
+      <rect x="54" y="0" width="38" height="20" rx="4" fill="#0f1b2f" stroke="#1f3658" stroke-width="0.8"/>
+      <text x="73" y="14" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">Vite</text>
       <!-- Node.js -->
-      <rect x="98" y="0" width="56" height="19" rx="4" fill="#0d1b30" stroke="#1d3558" stroke-width="0.8"/>
-      <text x="126" y="13" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">Node.js</text>
+      <rect x="98" y="0" width="56" height="20" rx="4" fill="#0f1b2f" stroke="#1f3658" stroke-width="0.8"/>
+      <text x="126" y="14" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">Node.js</text>
       <!-- Express -->
-      <rect x="160" y="0" width="58" height="19" rx="4" fill="#0d1b30" stroke="#1d3558" stroke-width="0.8"/>
-      <text x="189" y="13" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">Express</text>
+      <rect x="160" y="0" width="58" height="20" rx="4" fill="#0f1b2f" stroke="#1f3658" stroke-width="0.8"/>
+      <text x="189" y="14" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">Express</text>
       <!-- MongoDB -->
-      <rect x="224" y="0" width="65" height="19" rx="4" fill="#0d1b30" stroke="#1d3558" stroke-width="0.8"/>
-      <text x="256.5" y="13" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">MongoDB</text>
+      <rect x="224" y="0" width="65" height="20" rx="4" fill="#0f1b2f" stroke="#1f3658" stroke-width="0.8"/>
+      <text x="256.5" y="14" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">MongoDB</text>
     </g>
   </g>
 
-  <!-- CARD 2: MausamCrop (Top Right) -->
+  <!-- ROW 1, CARD 2: MausamCrop (Top Right) -->
   <g transform="translate(448, 125)">
-    <rect width="396" height="172" rx="12" fill="#091122" stroke="#1d2a45" stroke-width="1.2" class="proj-card"/>
-    <!-- Emerald Green Top Accent Bar -->
+    <!-- Dark rounded panel #0d1527 with subtle border -->
+    <rect width="396" height="172" rx="12" fill="#0d1527" stroke="#1d2a45" stroke-width="1.2" class="proj-card"/>
+    <!-- Top Emerald Accent Strip -->
     <rect x="18" y="0" width="80" height="2.5" rx="1.25" fill="#10b981"/>
+    <!-- External-link arrow (↗) at top right -->
     <use href="#proj-arrow" x="370" y="18"/>
 
-    <!-- Index Number & Domain Badge -->
+    <!-- Header pill: "02" (green/cyan) + "AGRI-TECH ML ENGINE" pill badge -->
     <g transform="translate(18, 18)">
-      <text x="0" y="14" fill="#10b981" font-size="11" class="proj-mono" font-weight="700">02</text>
-      <rect x="26" y="0" width="138" height="20" rx="4" fill="#061c1e" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.6"/>
-      <text x="95" y="14" text-anchor="middle" fill="#34d399" font-size="9" class="proj-mono" font-weight="700" letter-spacing="0.5">AGRI-TECH ML ENGINE</text>
+      <!-- "02" (green/cyan) pill -->
+      <rect x="0" y="0" width="28" height="20" rx="4" fill="#061c1e" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.5"/>
+      <text x="14" y="14" text-anchor="middle" fill="#10b981" font-size="10" class="proj-mono" font-weight="700">02</text>
+      <!-- "AGRI-TECH ML ENGINE" pill badge -->
+      <rect x="34" y="0" width="140" height="20" rx="4" fill="#061c1e" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.5"/>
+      <text x="104" y="14" text-anchor="middle" fill="#34d399" font-size="9" class="proj-mono" font-weight="700" letter-spacing="0.5">AGRI-TECH ML ENGINE</text>
     </g>
 
-    <!-- Project Title -->
+    <!-- Title: "MausamCrop" (bold white) -->
     <text x="18" y="66" fill="#ffffff" font-size="16" class="proj-display" font-weight="700">MausamCrop</text>
 
     <!-- Description -->
@@ -190,32 +211,37 @@
     <text x="18" y="106" fill="#94a3b8" font-size="10.8" class="proj-mono">engine delivering precision agronomic insights from</text>
     <text x="18" y="122" fill="#94a3b8" font-size="10.8" class="proj-mono">environmental data feeds and soil sensors.</text>
 
-    <!-- Tech Badges: Python, Machine Learning, Vite -->
+    <!-- Bottom Tech Pills: "Python" "Machine Learning" "Vite" -->
     <g transform="translate(18, 138)">
-      <rect x="0" y="0" width="56" height="19" rx="4" fill="#0d1b30" stroke="#1d3558" stroke-width="0.8"/>
-      <text x="28" y="13" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">Python</text>
-      <rect x="62" y="0" width="112" height="19" rx="4" fill="#0d1b30" stroke="#1d3558" stroke-width="0.8"/>
-      <text x="118" y="13" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">Machine Learning</text>
-      <rect x="180" y="0" width="38" height="19" rx="4" fill="#0d1b30" stroke="#1d3558" stroke-width="0.8"/>
-      <text x="199" y="13" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">Vite</text>
+      <rect x="0" y="0" width="56" height="20" rx="4" fill="#0f1b2f" stroke="#1f3658" stroke-width="0.8"/>
+      <text x="28" y="14" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">Python</text>
+      <rect x="62" y="0" width="114" height="20" rx="4" fill="#0f1b2f" stroke="#1f3658" stroke-width="0.8"/>
+      <text x="119" y="14" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">Machine Learning</text>
+      <rect x="182" y="0" width="38" height="20" rx="4" fill="#0f1b2f" stroke="#1f3658" stroke-width="0.8"/>
+      <text x="201" y="14" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">Vite</text>
     </g>
   </g>
 
-  <!-- CARD 3: SIH Anomaly Detection (Bottom Left) -->
+  <!-- ROW 2, CARD 1: SIH Anomaly Detection (Bottom Left) -->
   <g transform="translate(36, 310)">
-    <rect width="396" height="172" rx="12" fill="#091122" stroke="#1d2a45" stroke-width="1.2" class="proj-card"/>
-    <!-- Cyberpunk Red Top Accent Bar -->
+    <!-- Dark rounded panel #0d1527 with subtle border -->
+    <rect width="396" height="172" rx="12" fill="#0d1527" stroke="#1d2a45" stroke-width="1.2" class="proj-card"/>
+    <!-- Top Cyberpunk Red Accent Strip -->
     <rect x="18" y="0" width="80" height="2.5" rx="1.25" fill="#ff354f"/>
+    <!-- External-link arrow (↗) at top right -->
     <use href="#proj-arrow" x="370" y="18"/>
 
-    <!-- Index Number & Domain Badge -->
+    <!-- Header pill: "03" (red) + "GOVTECH AI PIPELINE" pill badge (red outline/accent) -->
     <g transform="translate(18, 18)">
-      <text x="0" y="14" fill="#ff354f" font-size="11" class="proj-mono" font-weight="700">03</text>
-      <rect x="26" y="0" width="140" height="20" rx="4" fill="#200d18" stroke="#ff354f" stroke-width="0.8" stroke-opacity="0.6"/>
-      <text x="96" y="14" text-anchor="middle" fill="#ff6b81" font-size="9" class="proj-mono" font-weight="700" letter-spacing="0.5">GOVTECH AI PIPELINE</text>
+      <!-- "03" (red) pill -->
+      <rect x="0" y="0" width="28" height="20" rx="4" fill="#200d18" stroke="#ff354f" stroke-width="0.8" stroke-opacity="0.5"/>
+      <text x="14" y="14" text-anchor="middle" fill="#ff354f" font-size="10" class="proj-mono" font-weight="700">03</text>
+      <!-- "GOVTECH AI PIPELINE" pill badge (red outline/accent) -->
+      <rect x="34" y="0" width="144" height="20" rx="4" fill="#200d18" stroke="#ff354f" stroke-width="0.8" stroke-opacity="0.5"/>
+      <text x="106" y="14" text-anchor="middle" fill="#ff6b81" font-size="9" class="proj-mono" font-weight="700" letter-spacing="0.5">GOVTECH AI PIPELINE</text>
     </g>
 
-    <!-- Project Title -->
+    <!-- Title: "SIH Anomaly Detection" (bold white) -->
     <text x="18" y="66" fill="#ffffff" font-size="16" class="proj-display" font-weight="700">SIH Anomaly Detection</text>
 
     <!-- Description -->
@@ -223,32 +249,37 @@
     <text x="18" y="106" fill="#94a3b8" font-size="10.8" class="proj-mono">for MPLADS transparency during Smart India</text>
     <text x="18" y="122" fill="#94a3b8" font-size="10.8" class="proj-mono">Hackathon (SIH 2026 Team Lead).</text>
 
-    <!-- Tech Badges: Python, AI Pipelines, MPLADS -->
+    <!-- Bottom Tech Pills: "Python" "AI Pipelines" "MPLADS" -->
     <g transform="translate(18, 138)">
-      <rect x="0" y="0" width="56" height="19" rx="4" fill="#0d1b30" stroke="#1d3558" stroke-width="0.8"/>
-      <text x="28" y="13" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">Python</text>
-      <rect x="62" y="0" width="84" height="19" rx="4" fill="#0d1b30" stroke="#1d3558" stroke-width="0.8"/>
-      <text x="104" y="13" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">AI Pipelines</text>
-      <rect x="152" y="0" width="60" height="19" rx="4" fill="#0d1b30" stroke="#1d3558" stroke-width="0.8"/>
-      <text x="182" y="13" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">MPLADS</text>
+      <rect x="0" y="0" width="56" height="20" rx="4" fill="#0f1b2f" stroke="#1f3658" stroke-width="0.8"/>
+      <text x="28" y="14" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">Python</text>
+      <rect x="62" y="0" width="84" height="20" rx="4" fill="#0f1b2f" stroke="#1f3658" stroke-width="0.8"/>
+      <text x="104" y="14" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">AI Pipelines</text>
+      <rect x="152" y="0" width="60" height="20" rx="4" fill="#0f1b2f" stroke="#1f3658" stroke-width="0.8"/>
+      <text x="182" y="14" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">MPLADS</text>
     </g>
   </g>
 
-  <!-- CARD 4: Web Development Community (Bottom Right) -->
+  <!-- ROW 2, CARD 2: Web Development Community (Bottom Right) -->
   <g transform="translate(448, 310)">
-    <rect width="396" height="172" rx="12" fill="#091122" stroke="#1d2a45" stroke-width="1.2" class="proj-card"/>
-    <!-- Electric Blue Top Accent Bar -->
+    <!-- Dark rounded panel #0d1527 with subtle border -->
+    <rect width="396" height="172" rx="12" fill="#0d1527" stroke="#1d2a45" stroke-width="1.2" class="proj-card"/>
+    <!-- Top Blue Accent Strip -->
     <rect x="18" y="0" width="80" height="2.5" rx="1.25" fill="#247bff"/>
+    <!-- External-link arrow (↗) at top right -->
     <use href="#proj-arrow" x="370" y="18"/>
 
-    <!-- Index Number & Domain Badge -->
+    <!-- Header pill: "04" (blue) + "COMMUNITY DEV PLATFORM" pill badge -->
     <g transform="translate(18, 18)">
-      <text x="0" y="14" fill="#247bff" font-size="11" class="proj-mono" font-weight="700">04</text>
-      <rect x="26" y="0" width="168" height="20" rx="4" fill="#081832" stroke="#247bff" stroke-width="0.8" stroke-opacity="0.6"/>
-      <text x="110" y="14" text-anchor="middle" fill="#60a5fa" font-size="9" class="proj-mono" font-weight="700" letter-spacing="0.5">COMMUNITY DEV PLATFORM</text>
+      <!-- "04" (blue) pill -->
+      <rect x="0" y="0" width="28" height="20" rx="4" fill="#081832" stroke="#247bff" stroke-width="0.8" stroke-opacity="0.5"/>
+      <text x="14" y="14" text-anchor="middle" fill="#247bff" font-size="10" class="proj-mono" font-weight="700">04</text>
+      <!-- "COMMUNITY DEV PLATFORM" pill badge -->
+      <rect x="34" y="0" width="168" height="20" rx="4" fill="#081832" stroke="#247bff" stroke-width="0.8" stroke-opacity="0.5"/>
+      <text x="118" y="14" text-anchor="middle" fill="#60a5fa" font-size="9" class="proj-mono" font-weight="700" letter-spacing="0.5">COMMUNITY DEV PLATFORM</text>
     </g>
 
-    <!-- Project Title -->
+    <!-- Title: "Web Development Community" (bold white) -->
     <text x="18" y="66" fill="#ffffff" font-size="16" class="proj-display" font-weight="700">Web Development Community</text>
 
     <!-- Description -->
@@ -256,55 +287,58 @@
     <text x="18" y="106" fill="#94a3b8" font-size="10.8" class="proj-mono">empowering student developers, technical</text>
     <text x="18" y="122" fill="#94a3b8" font-size="10.8" class="proj-mono">workshops &amp; ACM BMU student resources.</text>
 
-    <!-- Tech Badges: JavaScript, HTML5, CSS3, Full-Stack -->
+    <!-- Bottom Tech Pills: "JavaScript" "HTML5" "CSS3" "Full-Stack" -->
     <g transform="translate(18, 138)">
-      <rect x="0" y="0" width="76" height="19" rx="4" fill="#0d1b30" stroke="#1d3558" stroke-width="0.8"/>
-      <text x="38" y="13" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">JavaScript</text>
-      <rect x="82" y="0" width="50" height="19" rx="4" fill="#0d1b30" stroke="#1d3558" stroke-width="0.8"/>
-      <text x="107" y="13" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">HTML5</text>
-      <rect x="138" y="0" width="46" height="19" rx="4" fill="#0d1b30" stroke="#1d3558" stroke-width="0.8"/>
-      <text x="161" y="13" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">CSS3</text>
-      <rect x="190" y="0" width="68" height="19" rx="4" fill="#0d1b30" stroke="#1d3558" stroke-width="0.8"/>
-      <text x="224" y="13" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">Full-Stack</text>
+      <rect x="0" y="0" width="76" height="20" rx="4" fill="#0f1b2f" stroke="#1f3658" stroke-width="0.8"/>
+      <text x="38" y="14" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">JavaScript</text>
+      <rect x="82" y="0" width="50" height="20" rx="4" fill="#0f1b2f" stroke="#1f3658" stroke-width="0.8"/>
+      <text x="107" y="14" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">HTML5</text>
+      <rect x="138" y="0" width="46" height="20" rx="4" fill="#0f1b2f" stroke="#1f3658" stroke-width="0.8"/>
+      <text x="161" y="14" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">CSS3</text>
+      <rect x="190" y="0" width="68" height="20" rx="4" fill="#0f1b2f" stroke="#1f3658" stroke-width="0.8"/>
+      <text x="224" y="14" text-anchor="middle" fill="#93c5fd" font-size="9.5" class="proj-mono">Full-Stack</text>
     </g>
   </g>
 
-  <!-- ==================== BOTTOM: VERIFIED CREDENTIALS & HONORS ==================== -->
+  <!-- ==================== BOTTOM SECTION - "VERIFIED CREDENTIALS & HONORS" ==================== -->
   <g transform="translate(36, 498)">
-    <!-- Header -->
+    <!-- Small section label: "VERIFIED CREDENTIALS & HONORS" in muted monospace -->
     <text x="0" y="14" fill="#64748b" font-size="10.5" class="proj-mono" letter-spacing="1">VERIFIED CREDENTIALS &amp; HONORS</text>
     <line x1="220" y1="10" x2="808" y2="10" stroke="#16233b" stroke-width="1"/>
 
-    <!-- 3 SIDE-BY-SIDE HONORS CARDS (Styled like the NOW card) -->
+    <!-- A 3-column horizontal row of cards -->
     <g transform="translate(0, 24)">
-      <!-- Card 1: Odoo Hackathon -->
+      <!-- 1. Left Card: Red pill "ODOO '26" + Bold "Hackathon Qualifier" -->
       <g transform="translate(0, 0)">
-        <rect width="260" height="82" rx="10" fill="#091224" stroke="#1d2a45" stroke-width="1.2"/>
+        <rect width="260" height="82" rx="10" fill="#0d1527" stroke="#1d2a45" stroke-width="1.2" class="proj-card"/>
         <rect x="14" y="14" width="66" height="20" rx="4" fill="#ff354f"/>
         <text x="47" y="28" text-anchor="middle" fill="#ffffff" font-size="9" class="proj-mono" font-weight="800" letter-spacing="1">ODOO &apos;26</text>
         <text x="88" y="28" fill="#ffffff" font-size="12.5" class="proj-display" font-weight="700">Hackathon Qualifier</text>
+        <!-- Subtitle: "Modular Inventory Platform / High-efficiency modular architecture" -->
         <text x="14" y="52" fill="#8b949e" font-size="10" class="proj-mono">Modular Inventory Platform</text>
-        <text x="14" y="67" fill="#64748b" font-size="9" class="proj-mono">High-efficiency modular architecture</text>
+        <text x="14" y="67" fill="#64748b" font-size="9" class="proj-mono">/ High-efficiency modular architecture</text>
       </g>
 
-      <!-- Card 2: SIH 2026 -->
+      <!-- 2. Middle Card: Cyan pill "SIH '26" + Bold "Smart India Lead" -->
       <g transform="translate(274, 0)">
-        <rect width="260" height="82" rx="10" fill="#091224" stroke="#1d2a45" stroke-width="1.2"/>
+        <rect width="260" height="82" rx="10" fill="#0d1527" stroke="#1d2a45" stroke-width="1.2" class="proj-card"/>
         <rect x="14" y="14" width="60" height="20" rx="4" fill="#38bdf8"/>
         <text x="44" y="28" text-anchor="middle" fill="#070b16" font-size="9" class="proj-mono" font-weight="800" letter-spacing="1">SIH &apos;26</text>
         <text x="82" y="28" fill="#ffffff" font-size="12.5" class="proj-display" font-weight="700">Smart India Lead</text>
+        <!-- Subtitle: "Anomaly Detection Pipeline / AI-driven fund audit pipeline" -->
         <text x="14" y="52" fill="#8b949e" font-size="10" class="proj-mono">Anomaly Detection Pipeline</text>
-        <text x="14" y="67" fill="#64748b" font-size="9" class="proj-mono">AI-driven fund audit pipeline</text>
+        <text x="14" y="67" fill="#64748b" font-size="9" class="proj-mono">/ AI-driven fund audit pipeline</text>
       </g>
 
-      <!-- Card 3: ACM BMU -->
+      <!-- 3. Right Card: Royal Blue pill "ACM BMU" + Bold "Chapter Tech Lead" -->
       <g transform="translate(548, 0)">
-        <rect width="260" height="82" rx="10" fill="#091224" stroke="#1d2a45" stroke-width="1.2"/>
+        <rect width="260" height="82" rx="10" fill="#0d1527" stroke="#1d2a45" stroke-width="1.2" class="proj-card"/>
         <rect x="14" y="14" width="70" height="20" rx="4" fill="#247bff"/>
         <text x="49" y="28" text-anchor="middle" fill="#ffffff" font-size="9" class="proj-mono" font-weight="800" letter-spacing="1">ACM BMU</text>
         <text x="92" y="28" fill="#ffffff" font-size="12.5" class="proj-display" font-weight="700">Chapter Tech Lead</text>
+        <!-- Subtitle: "Developer Initiatives & Mentoring / Workshops & competitive programming" -->
         <text x="14" y="52" fill="#8b949e" font-size="10" class="proj-mono">Developer Initiatives &amp; Mentoring</text>
-        <text x="14" y="67" fill="#64748b" font-size="9" class="proj-mono">Workshops &amp; competitive programming</text>
+        <text x="14" y="67" fill="#64748b" font-size="9" class="proj-mono">/ Workshops &amp; competitive programming</text>
       </g>
     </g>
   </g>
