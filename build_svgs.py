@@ -174,7 +174,7 @@ def build_hero_svg():
 
     <!-- Dot Pattern -->
     <pattern id="{prefix}-dots" width="22" height="22" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1.1" fill="#247bff" fill-opacity="0.14"/>
+      <circle cx="2" cy="2" r="0.75" fill="#38bdf8" fill-opacity="0.04"/>
     </pattern>
 
     <!-- Name Mask Reveal -->
@@ -412,7 +412,7 @@ def build_about_svg():
     </linearGradient>
 
     <pattern id="{prefix}-dots" width="22" height="22" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1.1" fill="#247bff" fill-opacity="0.12"/>
+      <circle cx="2" cy="2" r="0.75" fill="#38bdf8" fill-opacity="0.04"/>
     </pattern>
 
     <clipPath id="{prefix}-carousel-window">
@@ -617,7 +617,7 @@ def build_stack_svg():
     </radialGradient>
 
     <pattern id="{prefix}-dots" width="22" height="22" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1.1" fill="#247bff" fill-opacity="0.12"/>
+      <circle cx="2" cy="2" r="0.75" fill="#38bdf8" fill-opacity="0.04"/>
     </pattern>
   </defs>
 
@@ -918,7 +918,7 @@ def build_id_dashboard_svg():
     </linearGradient>
 
     <pattern id="{prefix}-dots" width="22" height="22" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1.1" fill="#247bff" fill-opacity="0.12"/>
+      <circle cx="2" cy="2" r="0.75" fill="#38bdf8" fill-opacity="0.04"/>
     </pattern>
 
     <!-- Clip Path for ID card body (width: 215, height: 350) -->
@@ -1173,7 +1173,7 @@ def build_connect_svg():
     </radialGradient>
 
     <pattern id="{prefix}-dots" width="22" height="22" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1.1" fill="#247bff" fill-opacity="0.12"/>
+      <circle cx="2" cy="2" r="0.75" fill="#38bdf8" fill-opacity="0.04"/>
     </pattern>
   </defs>
 
