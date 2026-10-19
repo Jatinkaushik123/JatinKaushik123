@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -140,10 +141,22 @@
       filter: brightness(1.15);
     }
 
-    .social-linkedin { background: #0a66c2; }
-    .social-github { background: #24292f; border: 1px solid #30363d; }
-    .social-discord { background: #5865f2; }
-    .social-instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+    .social-linkedin {
+      background: #0a66c2;
+    }
+
+    .social-github {
+      background: #24292f;
+      border: 1px solid #30363d;
+    }
+
+    .social-discord {
+      background: #5865f2;
+    }
+
+    .social-instagram {
+      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    }
 
     /* Projects Table */
     .projects-section {
@@ -169,7 +182,8 @@
       font-size: 13px;
     }
 
-    th, td {
+    th,
+    td {
       border: 1px solid var(--gh-border);
       padding: 10px 14px;
       text-align: left;
@@ -217,6 +231,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <!-- Controls Toolbar -->
@@ -237,35 +252,40 @@
 
     <!-- 1. Hero SVG -->
     <div class="svg-wrapper">
-      <img src="./assets/hero.svg?v=2" alt="Intro - Jatin Kaushik" />
+      <img src="./assets/hero.svg?v=3" alt="Intro - Jatin Kaushik" />
     </div>
 
     <!-- 2. About Life SVG -->
     <div class="svg-wrapper">
-      <img src="./assets/about-life.svg?v=2" alt="About &amp; Trajectory" />
+      <img src="./assets/about-life.svg?v=3" alt="About &amp; Trajectory" />
     </div>
 
     <!-- 3. Stack SVG -->
     <div class="svg-wrapper">
-      <img src="./assets/stack.svg?v=2" alt="Orbital Tech Stack" />
+      <img src="./assets/stack.svg?v=3" alt="Orbital Tech Stack" />
     </div>
 
     <!-- 4. ID Dashboard SVG -->
     <div class="svg-wrapper">
-      <img src="./assets/id-dashboard.svg?v=2" alt="Verified Credentials Dashboard" />
+      <img src="./assets/id-dashboard.svg?v=3" alt="Verified Credentials Dashboard" />
     </div>
 
     <!-- 5. Connect SVG -->
     <div class="svg-wrapper">
-      <img src="./assets/connect.svg?v=2" alt="Connect &amp; Collaborate" />
+      <img src="./assets/connect.svg?v=3" alt="Connect &amp; Collaborate" />
     </div>
 
     <!-- Text Social Links below Connect (1:1 with Udit's profile) -->
     <div style="text-align: center; margin: 16px 0 6px; font-size: 14px;">
-      <a href="https://www.linkedin.com/in/jatin-kaushik-bmu/" target="_blank" rel="noopener noreferrer" style="color: var(--gh-link); text-decoration: underline;">LinkedIn</a> &nbsp;&bull;&nbsp;
-      <a href="https://github.com/Jatinkaushik123" target="_blank" rel="noopener noreferrer" style="color: var(--gh-link); text-decoration: underline;">GitHub &mdash; Jatinkaushik123</a> &nbsp;&bull;&nbsp;
-      <a href="https://www.instagram.com/simply._.aadi/" target="_blank" rel="noopener noreferrer" style="color: var(--gh-link); text-decoration: underline;">Instagram &mdash; @simply._.aadi</a> &nbsp;&bull;&nbsp;
-      <a href="https://discord.gg/6UdG4qdnEG" target="_blank" rel="noopener noreferrer" style="color: var(--gh-link); text-decoration: underline;">Discord Community</a>
+      <a href="https://www.linkedin.com/in/jatin-kaushik-bmu/" target="_blank" rel="noopener noreferrer"
+        style="color: var(--gh-link); text-decoration: underline;">LinkedIn</a> &nbsp;&bull;&nbsp;
+      <a href="https://github.com/Jatinkaushik123" target="_blank" rel="noopener noreferrer"
+        style="color: var(--gh-link); text-decoration: underline;">GitHub &mdash; Jatinkaushik123</a> &nbsp;&bull;&nbsp;
+      <a href="https://www.instagram.com/simply._.aadi/" target="_blank" rel="noopener noreferrer"
+        style="color: var(--gh-link); text-decoration: underline;">Instagram &mdash; @simply._.aadi</a>
+      &nbsp;&bull;&nbsp;
+      <a href="https://discord.gg/6UdG4qdnEG" target="_blank" rel="noopener noreferrer"
+        style="color: var(--gh-link); text-decoration: underline;">Discord Community</a>
     </div>
 
     <div style="text-align: center; margin-bottom: 24px; color: #8b949e; font-size: 13px; font-style: italic;">
@@ -289,49 +309,61 @@
             <td><strong>Modular Inventory Management</strong></td>
             <td>Full-Stack Platform</td>
             <td><code>React</code> <code>Vite</code> <code>Node.js</code> <code>Express</code> <code>MongoDB</code></td>
-            <td>High-efficiency modular inventory management platform built for <strong>Odoo Hackathon (2026 Qualifier)</strong>. Real-time updates, audit log engine &amp; modular architecture.</td>
+            <td>High-efficiency modular inventory management platform built for <strong>Odoo Hackathon (2026
+                Qualifier)</strong>. Real-time updates, audit log engine &amp; modular architecture.</td>
           </tr>
           <tr>
             <td><strong>MausamCrop</strong></td>
             <td>Agri-Tech ML Engine</td>
             <td><code>Python</code> <code>Machine Learning</code> <code>Vite</code></td>
-            <td>Weather-based agricultural crop and soil recommendation engine delivering precision agronomic insights from environmental data feeds.</td>
+            <td>Weather-based agricultural crop and soil recommendation engine delivering precision agronomic insights
+              from environmental data feeds.</td>
           </tr>
           <tr>
             <td><strong>SIH Anomaly Detection</strong></td>
             <td>GovTech AI Pipeline</td>
             <td><code>Python</code> <code>AI Pipelines</code> <code>MPLADS</code></td>
-            <td>AI-driven anomaly and fund-leakage audit pipeline for MPLADS transparency during <strong>Smart India Hackathon (SIH 2026 Team Lead)</strong>.</td>
+            <td>AI-driven anomaly and fund-leakage audit pipeline for MPLADS transparency during <strong>Smart India
+                Hackathon (SIH 2026 Team Lead)</strong>.</td>
           </tr>
           <tr>
             <td><strong>Web Development Community Project</strong></td>
             <td>Community Dev Platform</td>
             <td><code>JavaScript</code> <code>HTML5</code> <code>CSS3</code> <code>Full-Stack</code></td>
-            <td>Collaborative open-source community platform empowering student developers, tech workshops &amp; ACM BMU resources.</td>
+            <td>Collaborative open-source community platform empowering student developers, tech workshops &amp; ACM BMU
+              resources.</td>
           </tr>
           <tr>
             <td><strong>Passport Photo Pro</strong></td>
             <td>AI &amp; Image Processing</td>
-            <td><code>Python</code> <code>Flask</code> <code>Tailwind CSS</code> <code>Cropper.js</code> <code>Cloudinary AI</code> <code>Pillow</code> <code>EmailJS</code></td>
-            <td>AI-powered passport photo generator with background removal, enhancement, in-browser crop, customizable dimensions, multi-copy support, and print-ready A4 PDF export at 300 DPI.</td>
+            <td><code>Python</code> <code>Flask</code> <code>Tailwind CSS</code> <code>Cropper.js</code>
+              <code>Cloudinary AI</code> <code>Pillow</code> <code>EmailJS</code></td>
+            <td>AI-powered passport photo generator with background removal, enhancement, in-browser crop, customizable
+              dimensions, multi-copy support, and print-ready A4 PDF export at 300 DPI.</td>
           </tr>
           <tr>
             <td><strong>Quantum Cryogenic Digital Twin</strong></td>
             <td>Quantum Simulation</td>
-            <td><code>Python</code> <code>Streamlit</code> <code>NumPy</code> <code>Matplotlib</code> <code>Scikit-learn</code> <code>Plotly</code></td>
-            <td>Interactive digital twin simulating multi-stage cryogenic cooling in quantum computing systems. Models heat leaks, tracks thermodynamics, and uses ML to predict cooling curves.</td>
+            <td><code>Python</code> <code>Streamlit</code> <code>NumPy</code> <code>Matplotlib</code>
+              <code>Scikit-learn</code> <code>Plotly</code></td>
+            <td>Interactive digital twin simulating multi-stage cryogenic cooling in quantum computing systems. Models
+              heat leaks, tracks thermodynamics, and uses ML to predict cooling curves.</td>
           </tr>
           <tr>
             <td><strong>AI Document RAG</strong></td>
             <td>Generative AI &amp; RAG</td>
-            <td><code>Python</code> <code>FastAPI</code> <code>React</code> <code>Vite</code> <code>FAISS</code> <code>OpenAI API</code> <code>Sentence Transformers</code></td>
-            <td>AI-powered PDF question-answering system using RAG. Processes uploaded documents, retrieves relevant content through semantic search, and generates grounded answers with source references.</td>
+            <td><code>Python</code> <code>FastAPI</code> <code>React</code> <code>Vite</code> <code>FAISS</code>
+              <code>OpenAI API</code> <code>Sentence Transformers</code></td>
+            <td>AI-powered PDF question-answering system using RAG. Processes uploaded documents, retrieves relevant
+              content through semantic search, and generates grounded answers with source references.</td>
           </tr>
           <tr>
             <td><strong>Project Management App</strong></td>
             <td>Full-Stack Productivity</td>
-            <td><code>React</code> <code>Vite</code> <code>Redux</code> <code>Node.js</code> <code>Express</code> <code>Prisma</code> <code>PostgreSQL</code> <code>Clerk</code> <code>Inngest</code></td>
-            <td>Full-stack project management application designed to organize projects, manage tasks, and streamline workflows with authentication, database operations, and background jobs.</td>
+            <td><code>React</code> <code>Vite</code> <code>Redux</code> <code>Node.js</code> <code>Express</code>
+              <code>Prisma</code> <code>PostgreSQL</code> <code>Clerk</code> <code>Inngest</code></td>
+            <td>Full-stack project management application designed to organize projects, manage tasks, and streamline
+              workflows with authentication, database operations, and background jobs.</td>
           </tr>
         </tbody>
       </table>
@@ -341,15 +373,17 @@
 
   <!-- Audit Status Footer -->
   <div class="audit-footer">
-    <div><strong>Self-Containment Audit:</strong> <span class="audit-pass">100% PASS</span> — Zero external HTTP requests, inline WOFF2 fonts, inline PNG alpha preserved.</div>
-    <div><strong>Art Direction:</strong> #070b16 Navy · #247bff Electric Blue · #ff354f Crimson · Space Grotesk &amp; JetBrains Mono</div>
+    <div><strong>Self-Containment Audit:</strong> <span class="audit-pass">100% PASS</span> — Zero external HTTP
+      requests, inline WOFF2 fonts, inline PNG alpha preserved.</div>
+    <div><strong>Art Direction:</strong> #070b16 Navy · #247bff Electric Blue · #ff354f Crimson · Space Grotesk &amp;
+      JetBrains Mono</div>
   </div>
 
   <script>
     function toggleWidth(width) {
       const container = document.getElementById('profile-container');
       container.style.maxWidth = width + 'px';
-      
+
       document.querySelectorAll('.btn').forEach(b => b.classList.remove('active'));
       if (width === 896) document.getElementById('btn-desktop').classList.add('active');
       if (width === 680) document.getElementById('btn-tablet').classList.add('active');
@@ -358,4 +392,5 @@
     document.getElementById('btn-desktop').classList.add('active');
   </script>
 </body>
+
 </html>
