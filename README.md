@@ -44,11 +44,3 @@
 - **ACM BMU Student Chapter Tech Lead** — Guiding developer initiatives, workshops &amp; competitive coding
 
 </details>
-
----
-
-### 🔤 Typography & Open Source Licenses
-
-The SVG suite embeds self-contained base64 WOFF2 subsets to ensure identical typography across devices with zero external network requests:
-- **Display Font**: Space Grotesk (700 Bold) — Designed by Florian Karsten, licensed under the [SIL Open Font License 1.1](./licenses/SPACE_GROTESK_OFL.txt).
-- **Monospace Font**: JetBrains Mono (600 SemiBold) — Designed by JetBrains, licensed under the [SIL Open Font License 1.1](./licenses/JETBRAINS_MONO_OFL.txt).
